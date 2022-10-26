@@ -1,1 +1,6 @@
-<p>sidebar works!</p>
+<div class="list" (click)="ClickedItem(item)" *ngFor="let item of SidebarList; let i = index;">
+    <div class="list-img_wrap">
+      <img src="./assets/iconsSidebar/{{i}}.svg" alt="">
+    </div>
+    <div class="item">{{item.item}}</div>
+</div>

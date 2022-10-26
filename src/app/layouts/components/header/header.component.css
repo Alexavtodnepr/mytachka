@@ -1,0 +1,17 @@
+header{
+  width:100%;
+  height: 4.9rem;
+  padding: 10px;
+}
+.burger-wrapp{
+  cursor:pointer;
+}
+.burger{
+  width: 4rem;
+  height: 4rem;
+  transition: all 2s ease-in-out;
+}
+.header-container{
+  display: flex;
+  flex-direction: row;
+}

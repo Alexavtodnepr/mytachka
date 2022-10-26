@@ -1,0 +1,116 @@
+
+
+.wrapper-form{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  max-width: 600px;
+}
+
+.auth-form {
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(276deg, rgba(255, 255, 255, 1) 0%, rgba(11, 219, 21, 1) 77%);
+  box-shadow: 11px 9px 46px -3px rgba(0,0,0,0.75);
+}
+.name-wrap{
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+.name-wrap>label{
+  height: 20px;
+  line-height: 30px;
+  font-size: 20px;
+  width: 80px;
+}
+.name-wrap>input{
+  width: 100%;
+  max-width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: yellowgreen;
+  padding-left: 10px;
+}
+
+.with-google{
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+button{
+  margin: 20px 25px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  color: white;
+  width: 70px;
+  cursor: pointer;
+}
+.button-wrap{
+  display: flex;
+  justify-content: center;
+}
+.button-wrap>button:first-child{
+  background-color: darkblue;
+}
+.button-wrap>button:nth-child(2){
+  background-color: yellow;
+  color: dimgrey;
+}
+.google{
+  width: 100px;
+  color: dimgrey;
+}
+.google:active{
+  background-color: blue;
+}
+.button-wrap>button:active{
+  opacity: .7;
+}
+.with-google>p{
+  position: relative;
+}
+.with-google>p:before{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 100px;
+  background: black;
+  top: 10px;
+}
+.with-google>p:after{
+  content: ' ';
+  position: absolute;
+  right: 0;
+  height: 1px;
+  width: 100px;
+  background: black;
+  top: 10px;
+}
+
+@media screen and (max-width: 420px){
+  .name-wrap{
+    flex-direction: column;
+    align-items: center;
+  }
+  .name-wrap>label{
+    line-height: 0;
+  }
+}
+

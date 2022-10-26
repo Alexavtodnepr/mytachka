@@ -1,1 +1,11 @@
-<p>header works!</p>
+<header appWidth>
+  <div class="container header-container">
+    <div class="burger-wrapp" (click)="changeSideBarSize()">
+      <img class="burger" src="{{burgerToggle?'./assets/icons/close.svg':'./assets/icons/burger.svg'}}" alt="">
+    </div>
+    <div class="users-info">
+      <img src="" alt="">
+      <div>Active car || name</div>
+    </div>
+  </div>
+</header>

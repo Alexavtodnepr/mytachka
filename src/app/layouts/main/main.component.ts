@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
+  public burgerToggle: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  stateBurger(event: boolean) {
+    this.burgerToggle = event;
+  }
 }
